@@ -1,0 +1,44 @@
+ROUND 2...
+
+
+Whole page
+
+  x  PROBLEM: When page WIDTH is too small, the background-color changes and I cannot scroll vertically.
+
+  x  TASK: Remove the "Notifications" for now.
+
+The intro paragraph
+
+    x TASK: Left-align
+
+The lessons
+
+    Great options.
+
+  x  1. Use the "Unit 3" example
+  x  2. Make it one column
+  x  3. Everything on one page (no tabs)
+  x  4. Remove all the descriptions, except for one of the lessons.
+
+Lesson "Quiz".
+
+  x  TASK: Please make the choices "checkboxes"
+  x  TASK: Please rename "Submit" to "Submit answer".
+
+Student Accounts
+
+  x  TASK: Please add in three elements at the top, for "status, success, warning, error" (however Bootstrap names them).
+
+x    TASK: Here are the columns: ID, NAME STATUS
+x    TASK: The "Name" and "Status" columns:
+
+x            a. Will be underlined.
+x            b. Will show a dialog or balloon when deliberately "clicked" (with close [x]).
+
+
+
+
+
+
+Best wishes,
+Biagio

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+	<head>
+		<title>My balls were made for bouncing</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="js/jquery-2.2.4.js"></script>
+		<script src="js/ball.js"></script>
+		<style>
+			div {
+				position: absolute;
+				border-radius: 50%;
+			}
+			
+			body{
+				height: 100vh;
+				margin: 0;
+			}
+		</style>
+		<script>
+			$(document).ready(function(){
+				var balls = [];
+				for (var i=0;i<10; i++) {
+				var ball1 = Ball({
+				size: 30,
+				color: "#ffff00",
+				pos: {
+					left: Math.random()*($('body').width()-30),
+					top: Math.random()*($('body').height()-30)
+				},
+				speed: {
+					x: Math.random()*20-10,
+					y: Math.random()*20-10
+				}
+			});
+			balls.push(ball1);
+			}
+			setInterval(function(){
+				for (var i=0;i<balls.length;i++){
+				balls[i].move(balls);
+			    }	
+			}, 1000/30);
+	});
+				
+				
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

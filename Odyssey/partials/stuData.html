@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Lakota Language Lessons</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/main.css" type="text/CSS">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="../bower_components/animate.css/animate.min.css" media="screen" title="no title">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding-top: 70px;
+            /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+        }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<!-- TODO: add sound to the popovers -->
+<!-- TODO: make mobile ready for devices -->
+<!-- TODO: no errors at time of commit -->
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+                <a class="navbar-brand" href="index.html">Lakoda Language Lessons</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav pull-right">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../partials/Lessons.html">Lessons</a>
+                    </li>
+                    <li>
+                        <a href="../partials/Quiz.html">Quiz</a>
+                    </li>
+                    <li>
+                        <a href="../partials/studata.html">Admin Panel</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+
+    <div class="container">
+
+
+        <div class="row clearfix">
+        </div>
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+            Admin Panel
+          </h3>
+            </div>
+            <div class="panel-body">
+                <div class="container">
+                    <h3>Student Accounts</h3>
+                    <div class="container-fluid">
+                      <div class="alert alert-success">
+                        <strong>Success!</strong> Indicates a successful or positive action.
+                      </div>
+
+                      <div class="alert alert-info">
+                        <strong>Info!</strong> Indicates a neutral informative change or action.
+                      </div>
+
+                      <div class="alert alert-warning">
+                        <strong>Warning!</strong> Indicates a warning that might need attention.
+                      </div>
+
+                      <div class="alert alert-danger">
+                        <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+                      </div>
+                    </div>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" id="firstName">First Name: </label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="studentFirstName" placeholder="Larry">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" id="lastName">Last Name: </label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="studentLastName" placeholder="Smith">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" id="username">Username: </label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="studentUserName" placeholder="Username">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" id="email">Email: </label>
+                            <div class="col-sm-4">
+                                <input type="email" class="form-control" id="studentEmail" placeholder="name@email.com" required>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" id="password">Password: </label>
+                            <div class="col-sm-4">
+                                <input type="password" class="form-control" id="studentPassword" placeholder="Enter Password" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-9">
+                                <button type="submit" class="btn btn-default btn-primary text-center">Add New Student</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <hr />
+            <div class="panel-body">
+
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th >ID</th>
+                                <th>NAME</th>
+
+                                <th>STATUS</th>
+
+                                <!--<th>REPORT</th>-->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1234</td>
+                                <td><a href="#" data-toggle="modal" data-target="#studReport" class="Linkable">Joe Smith</a></td>
+                                <td class="active"><a href="#" data-toggle="modal" data-target="#status" class="Linkable">Active</a></td>
+                                <!--<td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#studReport">View</button></td>-->
+                            </tr>
+
+                            <tr class="studDisabled">
+                                  <td>7891</td>
+                                  <td><a href="#" data-toggle="modal" data-target="#studReport" class="Linkable">Mary Jones</a></td>
+                                  <td class="active"><a href="#" data-toggle="modal" data-target="#status" class="unLinkable">Disabled</a></td>
+                                  <!--<td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#studReport">View</button></td>-->
+                              </tr>
+
+                            <tr class="studDisabled">
+                              <td>2354</td>
+                              <td><a href="#" data-toggle="modal" data-target="#studReport" class="Linkable">Sam Parker</a></td>
+                              <td class="active"><a href="#" data-toggle="modal" data-target="#status" class="unLinkable">Disabled</a></td>
+                              <!--<td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#studReport">View</button></td>-->
+                            </tr>
+
+                            <tr class="studDisabled">
+                              <td>7354</td>
+                              <td><a href="#" data-toggle="modal" data-target="#studReport" class="Linkable">Terry Berg</a></td>
+                              <td class="active"><a href="#" data-toggle="modal" data-target="#status" class="unLinkable">Disabled</a></td>
+                              <!--<td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#studReport">View</button></td>-->
+                              </tr>
+
+                            <tr class="studDisabled">
+                              <td>4321</td>
+                              <td><a href="#" data-toggle="modal" data-target="#studReport" class="Linkable">Cassie Lund</a></td>
+                              <td class="active"><a href="#" data-toggle="modal" data-target="#status" class="unLinkable">Disabled</a></td>
+                              <!--<td><button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#studReport">View</button></td>-->
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+<!-- Modal for Status -->
+<div class="modal fade" id="status" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Student Status</h4>
+        </div>
+        <div class="modal-body">
+            <div class="table-responsive">
+
+
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+  </div>
+</div>
+    <!-- Modal for Student Report -->
+    <!-- Modal -->
+    <div class="modal fade" id="studReport" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Student Report</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        ID
+                                    </th>
+                                    <th>
+                                        Name
+                                    </th>
+                                    <th>
+                                        Current Lesson
+                                    </th>
+                                    <th>
+                                        Average Score
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tr>
+                                <td>
+                                    1234
+                                </td>
+                                <td>
+                                    Joe Smith
+                                </td>
+                                <td>
+                                    Lesson 3
+                                </td>
+                                <td>
+                                    82%
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th>
+                                        Scores:
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tr>
+                                  <td>
+                                      Lesson 1: 84%
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Lesson 2: 72%
+                                    </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                      Lesson 3: 91%
+                                  </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!-- Modal for alerts -->
+
+  <!-- Modal
+  <div class="modal fade" id="alertCenter" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Notifications</h4>
+        </div>
+        <div class="modal-body">
+             <div class="row">
+
+		<div class="col-md-12">
+          <div class="update-nag">
+            <div class="update-split"><i class="glyphicon glyphicon-refresh"></i></div>
+            <div class="update-text">Time to back something up! <a href="#">Update Now</a> <label>X</label> </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="update-nag">
+            <div class="update-split update-info"><i class="glyphicon glyphicon-folder-open"></i></div>
+            <div class="update-text">App Update <a href="#">Donatirino</a> v0.2 is available! <a href="#">Update Now</a> <label>X</label> </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="update-nag">
+            <div class="update-split update-success"><i class="glyphicon glyphicon-leaf"></i></div>
+            <div class="update-text">NEW CONTENT: <a href="#">SPANISH</a> v1.4 is available! <a href="#">Update Now</a> <label>X</label> </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="update-nag">
+            <div class="update-split update-danger"><i class="glyphicon glyphicon-warning-sign"></i></div>
+            <div class="update-text"> <strong>Warning</strong> Some type of problem, fix it! <label id="3">X</label> </div>
+          </div>
+        </div>
+
+	</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  -->
+    <!-- Start Footer -->
+
+    <div class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <p class="navbar-text pull-left">version 1.0 © 2016 - Site Built By
+                <a href="#" target="_blank">DevilDogDeveloper.com</a>
+            </p>
+
+
+                <!--
+                 <button type="button" class="navbar-btn btn btn-info pull-right" data-toggle="modal" data-target="#alertCenter">Notifications</button>
+               -->
+        </div>
+
+
+    </div>
+
+    <!-- end Footer -->
+  </div>
+
+
+    <!-- Main JS -->
+    <script src="../js/main.js"></script>
+    <!-- jQuery Version 1.11.1 -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- font Awesome -->
+
+    <!-- Scripts ran on page -->
+    <script>
+
+    $(document).ready(function(){
+
+        $( ".update-nag > .update-text label" ).click(function() {
+            $(this).parent().parent().hide();
+        });
+
+    });
+
+
+    </script>
+
+</body>
+
+</html>
