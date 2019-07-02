@@ -1,5 +1,0 @@
-@header is at line 2340 for bg image change
-
-@main main.style2 is at 2272 for bg image change
-
-only change the ../../folder/image.jpg URL location to change the background image
