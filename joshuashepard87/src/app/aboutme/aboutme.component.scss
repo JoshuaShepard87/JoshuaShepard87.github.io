@@ -1,3 +1,88 @@
-#aboutme{
-  background-color: #F2F2F2;
+.aboutMeH1{
+  text-align: center;
+  color: #111;
+  font-size: 3.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-top: 3em;
+  font-family: 'Gidugu', sans-serif;
 }
+.aboutMeH12{
+  text-align: center;
+  color: #ffffff;
+  font-size: 3.5em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-top: 3em;
+  font-family: 'Gidugu', sans-serif;
+}
+.whatIdoh4{
+  text-align: center;
+  color: deepskyblue;
+  text-transform: uppercase;
+}
+.textwhite{
+  color: #ffffff;
+}
+.aboutMepTop{
+  color: deepskyblue;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+hr{
+  padding-top: 2em;
+}
+.paddingspace{
+  padding: 2em 0 2em 0;
+}
+
+.counter{
+  background: url(../../assets/banner.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  min-height: 450px;
+}
+
+.aboutmeh4{
+  padding-top: 2px;
+  font-size: 1.6em;
+  margin: 0;
+  color: deepskyblue;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Gidugu', sans-serif;
+}
+.aboutmep{
+  color: #827e7e;
+  font-size: 0.95em;
+  border-bottom: 1px dashed deepskyblue;
+  padding-bottom: 5px;
+}
+
+.aboutmebody{
+  color: #827e7e;
+  font-family: 'Gidugu', sans-serif;
+  font-size: 0.98em;
+}
+.bg-splatter{
+  background: url(../../assets/darkBG.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  //height: 100%;
+  //width: 100%;
+  padding-top: 1em;
+}
+.whatIdo1{
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+  .dashed-border{
+    border-bottom: 1px dashed deepskyblue;
+  }
+
