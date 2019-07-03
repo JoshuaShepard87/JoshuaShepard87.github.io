@@ -8,10 +8,11 @@ body, html {
   display: grid;
   grid-template-columns: 150px auto;
   height: 100vh;
+  //overflow-x: hidden;
 
   #content {
     padding: auto;
-
+    //background-color: #00a8ff;
 
     ul {
       list-style-type: none;

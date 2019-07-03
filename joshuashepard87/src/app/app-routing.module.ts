@@ -14,6 +14,7 @@ import { DocumentsComponent } from './documents/documents.component';
 import { HomeComponent } from './home/home.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { BlogComponent} from "./blog/blog.component";
+import {PagenotfoundComponent} from "./pagenotfound/pagenotfound.component";
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -28,7 +29,7 @@ const routes: Routes = [
   {path: 'Upcoming-Projects', component: UpcomingComponent},
   {path: 'Social-Media', component: SocialmediaComponent},
   {path: 'Blog', component: BlogComponent},
-  { path: '**', component: NotfoundComponent}
+  { path: '**', component: PagenotfoundComponent}
 ];
 
 @NgModule({

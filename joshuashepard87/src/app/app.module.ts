@@ -18,6 +18,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { UpcomingComponent } from './upcoming/upcoming.component';
 import { SocialmediaComponent } from './socialmedia/socialmedia.component';
 import { BlogComponent } from './blog/blog.component';
+import { SpringpostComponent } from './blog/blog-posts/springpost/springpost.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { BlogComponent } from './blog/blog.component';
     ContactFormComponent,
     UpcomingComponent,
     SocialmediaComponent,
-    BlogComponent
+    BlogComponent,
+    SpringpostComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
