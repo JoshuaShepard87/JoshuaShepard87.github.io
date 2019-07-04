@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -20,41 +20,18 @@ import { SocialmediaComponent } from './socialmedia/socialmedia.component';
 import { BlogComponent } from './blog/blog.component';
 import { SpringpostComponent } from './blog/blog-posts/springpost/springpost.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
-import { CommonModule } from '@angular/common';
-import { TransferHttpCacheModule } from '@nguniversal/common';
-import { HttpClientModule } from '@angular/common/http';
-import { NgtUniversalModule } from '@ng-toolkit/universal';
+import { AppModule } from './app.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SidebarComponent,
-    AboutmeComponent,
-    MilestonesComponent,
-    TechnologystackComponent,
-    DocumentsComponent,
-    HomeComponent,
-    NotfoundComponent,
-    LoginComponent,
-    AdminComponent,
-    SubmitFormComponent,
-    ProjectsComponent,
-    ContactFormComponent,
-    UpcomingComponent,
-    SocialmediaComponent,
-    BlogComponent,
-    SpringpostComponent,
-    PagenotfoundComponent
-  ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    
     AppRoutingModule,
-    CommonModule,
-    TransferHttpCacheModule,
-    HttpClientModule,
-    NgtUniversalModule
+    
+    AppModule,
+    
+    BrowserTransferStateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppBrowserModule { }
